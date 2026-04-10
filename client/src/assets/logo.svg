@@ -1,0 +1,35 @@
+<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="200" fill="#121212" />
+
+  <!-- Network/Hub Icon -->
+  <g transform="translate(60, 60)">
+    <!-- Central Node -->
+    <circle cx="0" cy="0" r="12" fill="#00FF7F" />
+
+    <!-- Top-Left Node & Line -->
+    <line x1="0" y1="0" x2="-40" y2="-40" stroke="#00FF7F" stroke-width="2" />
+    <circle cx="-40" cy="-40" r="8" fill="#00FF7F" />
+
+    <!-- Top-Right Node & Line -->
+    <line x1="0" y1="0" x2="40" y2="-40" stroke="#00FF7F" stroke-width="2" />
+    <circle cx="40" cy="-40" r="8" fill="#00FF7F" />
+
+    <!-- Bottom-Left Node & Line -->
+    <line x1="0" y1="0" x2="-40" y2="40" stroke="#00FF7F" stroke-width="2" />
+    <circle cx="-40" cy="40" r="8" fill="#00FF7F" />
+
+    <!-- Bottom-Right Node & Line -->
+    <line x1="0" y1="0" x2="40" y2="40" stroke="#00FF7F" stroke-width="2" />
+    <circle cx="40" cy="40" r="8" fill="#00FF7F" />
+  </g>
+
+  <!-- Main Text: CodeNest -->
+  <text x="130" y="70" fill="#FFFFFF" font-size="40" font-family="Arial, sans-serif">Code</text>
+  <text x="220" y="70" fill="#00FF7F" font-size="40" font-family="Arial, sans-serif">Nest</text>
+
+  <!-- Tagline: Code, Create and Collaborate -->
+  <text x="130" y="110" fill="#FFFFFF" font-size="18" font-family="Arial, sans-serif">
+    Code, Create and Collaborate
+  </text>
+</svg>

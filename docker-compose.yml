@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  backend:
+    build: 
+      context: ./server
+      dockerfile: Dockerfile
+    env_file:
+      - ./server/.env
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    networks:
+      - Code_Sync
+    ports:
+      - "3000:3000"
+    command: npm run dev
+    depends_on:
+      - mongo
+
+  frontend:
+    build: 
+      context: ./client
+      dockerfile: Dockerfile
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+    networks:
+      - Code_Sync
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    command: npm run dev -- --host
+
+  mongo:
+    image: mongo:latest
+    networks:
+      - Code_Sync
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+networks:
+  Code_Sync:
+    driver: bridge
+
+volumes:
+  mongo-data:
