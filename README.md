@@ -1,4 +1,4 @@
-![logo](https://github.com/jagadeep18/dev-hub/blob/main/client/src/assets/logo.jpg)
+![logo](https://github.com/jagadeep18/CodeSync/blob/main/client/src/assets/logo.jpg)
 
 A collaborative, real-time code editor where users can seamlessly code together. It provides a platform for multiple users to enter a room, share a unique room ID, and collaborate on code simultaneously.
 
